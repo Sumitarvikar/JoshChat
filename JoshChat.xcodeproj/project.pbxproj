@@ -18,6 +18,8 @@
 		03DDE07128EAAC1700F3361D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07028EAAC1700F3361D /* RegisterViewController.swift */; };
 		03DDE07328EAAC9D00F3361D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07228EAAC9D00F3361D /* LoginViewController.swift */; };
 		03DDE07528EAAE1700F3361D /* Constansts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07428EAAE1700F3361D /* Constansts.swift */; };
+		03DDE07928EAC0D500F3361D /* MesssageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07728EAC0D500F3361D /* MesssageTableViewCell.swift */; };
+		03DDE07A28EAC0D500F3361D /* MesssageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DDE07828EAC0D500F3361D /* MesssageTableViewCell.xib */; };
 		042BF42B1F421C20AA3F73B0 /* Pods_JoshChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928C1013A697D7CCB3A0E5F5 /* Pods_JoshChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		03DDE07028EAAC1700F3361D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		03DDE07228EAAC9D00F3361D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		03DDE07428EAAE1700F3361D /* Constansts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constansts.swift; sourceTree = "<group>"; };
+		03DDE07728EAC0D500F3361D /* MesssageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesssageTableViewCell.swift; sourceTree = "<group>"; };
+		03DDE07828EAC0D500F3361D /* MesssageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesssageTableViewCell.xib; sourceTree = "<group>"; };
 		928C1013A697D7CCB3A0E5F5 /* Pods_JoshChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoshChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BCC128CA52B1737D38623F /* Pods-JoshChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoshChat.release.xcconfig"; path = "Target Support Files/Pods-JoshChat/Pods-JoshChat.release.xcconfig"; sourceTree = "<group>"; };
 		D2464C6556D02AB21D774B25 /* Pods-JoshChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoshChat.debug.xcconfig"; path = "Target Support Files/Pods-JoshChat/Pods-JoshChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		03DDE06928EAAB1B00F3361D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				03DDE07628EAC06700F3361D /* TableViewCell */,
 				03DDE06228EAAA7E00F3361D /* MessangerViewController.swift */,
 			);
 			path = View;
@@ -231,6 +236,15 @@
 				03DDE07028EAAC1700F3361D /* RegisterViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		03DDE07628EAC06700F3361D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE07728EAC0D500F3361D /* MesssageTableViewCell.swift */,
+				03DDE07828EAC0D500F3361D /* MesssageTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		7FD3E25E8FE982E59D230D62 /* Pods */ = {
@@ -311,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396436028E8476B00D2B514 /* LaunchScreen.storyboard in Resources */,
+				03DDE07A28EAC0D500F3361D /* MesssageTableViewCell.xib in Resources */,
 				03DDE05B28EAA93900F3361D /* GoogleService-Info.plist in Resources */,
 				0396435D28E8476B00D2B514 /* Assets.xcassets in Resources */,
 				0396435B28E8476900D2B514 /* Main.storyboard in Resources */,
@@ -367,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DDE07528EAAE1700F3361D /* Constansts.swift in Sources */,
+				03DDE07928EAC0D500F3361D /* MesssageTableViewCell.swift in Sources */,
 				03DDE07328EAAC9D00F3361D /* LoginViewController.swift in Sources */,
 				03DDE06328EAAA7E00F3361D /* MessangerViewController.swift in Sources */,
 				03DDE07128EAAC1700F3361D /* RegisterViewController.swift in Sources */,

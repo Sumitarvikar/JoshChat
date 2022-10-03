@@ -13,4 +13,11 @@ struct Constant {
     static let registerSegue = "RegisterToMessanger"
     static let loginSegue = "LoginToMessanger"
     
+
+struct FirbaseLibrary {
+    static let collectionName = "messages"
+    static let senderField = "sender"
+    static let bodyField = "body"
+    static let dateField = "date"
+}
 }

@@ -101,6 +101,9 @@
                                         <color key="tintColor" name="LightBlueApp"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendButtonClicked:" destination="Qj5-ib-CJe" eventType="touchUpInside" id="lyQ-mM-xDc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="PurpleColor"/>
@@ -127,12 +130,17 @@
                             <constraint firstItem="h3M-vj-VzO" firstAttribute="top" secondItem="Zd9-tj-k8N" secondAttribute="top" id="eVC-x5-E5o"/>
                             <constraint firstItem="h3M-vj-VzO" firstAttribute="leading" secondItem="Zd9-tj-k8N" secondAttribute="leading" id="mmv-yg-KbS"/>
                             <constraint firstItem="s6C-lr-gHP" firstAttribute="top" secondItem="h3M-vj-VzO" secondAttribute="bottom" id="rLa-3N-a6A"/>
+                            <constraint firstItem="QjW-a4-fW5" firstAttribute="top" secondItem="h3M-vj-VzO" secondAttribute="bottom" constant="21" id="uDi-nK-iaC"/>
                             <constraint firstItem="s6C-lr-gHP" firstAttribute="trailing" secondItem="Zd9-tj-k8N" secondAttribute="trailing" id="xFQ-l2-wyS"/>
                             <constraint firstItem="s6C-lr-gHP" firstAttribute="leading" secondItem="Zd9-tj-k8N" secondAttribute="leading" id="xUC-vT-meX"/>
                             <constraint firstAttribute="bottom" secondItem="s6C-lr-gHP" secondAttribute="bottom" constant="51" id="zTK-7E-WkS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="373-7D-FgF"/>
+                    <connections>
+                        <outlet property="messageTableView" destination="h3M-vj-VzO" id="C3r-0m-24z"/>
+                        <outlet property="messageTextField" destination="QjW-a4-fW5" id="Ufo-NU-Guv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QL4-eX-l2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
