@@ -17,8 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️JoshChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gm-ES-E4H">
+                                <rect key="frame" x="50" y="418" width="314" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lQF-Gj-1s1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
+                                <color key="textColor" name="BlueAppColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47A-PT-mvw">
+                                <rect key="frame" x="0.0" y="776" width="414" height="50"/>
+                                <color key="backgroundColor" name="BlueAppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SW4-wS-SPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="LogIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Aeu-IP-XHG" kind="show" id="94e-KU-FUP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xb-7o-VFd">
-                                <rect key="frame" x="0.0" y="748" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="708" width="414" height="60"/>
                                 <color key="backgroundColor" name="LightBlueApp"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="sTj-V0-VIS"/>
@@ -31,31 +56,6 @@
                                     <segue destination="CP2-SA-LrT" kind="show" id="ynT-0d-Wlm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️JoshChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gm-ES-E4H">
-                                <rect key="frame" x="50" y="418" width="314" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="lQF-Gj-1s1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
-                                <color key="textColor" name="BlueAppColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47A-PT-mvw">
-                                <rect key="frame" x="0.0" y="816" width="414" height="50"/>
-                                <color key="backgroundColor" name="BlueAppColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="SW4-wS-SPC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="LogIn">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Aeu-IP-XHG" kind="show" id="Yu2-T1-fbb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,10 +64,10 @@
                             <constraint firstAttribute="trailing" secondItem="47A-PT-mvw" secondAttribute="trailing" id="7Yu-2s-ST0"/>
                             <constraint firstItem="4Gm-ES-E4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Tk1-7h-8Fh"/>
                             <constraint firstItem="4Gm-ES-E4H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a3c-Xr-JFp"/>
-                            <constraint firstAttribute="bottom" secondItem="47A-PT-mvw" secondAttribute="bottom" constant="30" id="f1r-tA-guV"/>
+                            <constraint firstAttribute="bottom" secondItem="47A-PT-mvw" secondAttribute="bottom" constant="70" id="f1r-tA-guV"/>
                             <constraint firstItem="6Xb-7o-VFd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jS3-Cn-fXB"/>
                             <constraint firstItem="47A-PT-mvw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lU7-g2-TP6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Xb-7o-VFd" secondAttribute="bottom" constant="5" id="ttV-T7-1SZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Xb-7o-VFd" secondAttribute="bottom" constant="45" id="ttV-T7-1SZ"/>
                             <constraint firstItem="4Gm-ES-E4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zp4-fW-zJZ"/>
                         </constraints>
                     </view>
@@ -173,20 +173,21 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Qj5-ib-CJe" kind="show" id="AfP-wU-m1e"/>
+                                            <action selector="LoginButtonClicked:" destination="Aeu-IP-XHG" eventType="touchUpInside" id="l5N-TN-c9E"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VpM-sc-aA7">
-                                        <rect key="frame" x="47" y="133" width="104" height="34"/>
+                                        <rect key="frame" x="47" y="133" width="300" height="34"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="6im-Ul-TaB"/>
                                             <constraint firstAttribute="height" constant="34" id="lbb-Q3-kmf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSN-Zf-duB">
-                                        <rect key="frame" x="47" y="254" width="104" height="35"/>
+                                        <rect key="frame" x="47" y="254" width="300" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -216,6 +217,11 @@
                         <color key="backgroundColor" name="BlueAppColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="OR0-Ng-31l"/>
+                    <connections>
+                        <outlet property="passwordTextFIeld" destination="MSN-Zf-duB" id="Qon-Jc-htj"/>
+                        <outlet property="userNameTextFIeld" destination="VpM-sc-aA7" id="oor-k0-kbw"/>
+                        <segue destination="Qj5-ib-CJe" kind="show" identifier="LoginToMessanger" id="FJ2-nY-bhl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84m-kl-Rsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,20 +257,22 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Qj5-ib-CJe" kind="show" id="20X-YQ-vNx"/>
+                                    <action selector="registationButtonClicked:" destination="CP2-SA-LrT" eventType="touchUpInside" id="v61-KC-NxV"/>
+                                    <segue destination="Qj5-ib-CJe" kind="show" identifier="RegisterToMessanger" id="20X-YQ-vNx"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jjf-5S-uTB">
-                                <rect key="frame" x="47" y="133" width="104" height="34"/>
+                                <rect key="frame" x="47" y="133" width="300" height="34"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="7Fu-bd-vUR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="UGe-Gd-h9K"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B55-Vg-C2n">
-                                <rect key="frame" x="47" y="254" width="104" height="35"/>
+                                <rect key="frame" x="47" y="254" width="300" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -290,6 +298,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vn3-S9-0oF"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="B55-Vg-C2n" id="dPP-AE-TVi"/>
+                        <outlet property="registerButton" destination="YbB-Qe-NEP" id="kX8-cS-0vW"/>
+                        <outlet property="usernameTextField" destination="jjf-5S-uTB" id="RKQ-zc-PjO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8n1-PS-LQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,7 +328,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AfP-wU-m1e"/>
+        <segue reference="FJ2-nY-bhl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="TextField" width="298" height="93"/>
