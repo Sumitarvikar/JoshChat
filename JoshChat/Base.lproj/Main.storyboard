@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="51.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Messanger View Controller-->
         <scene sceneID="8Rk-pj-pro">
             <objects>
-                <viewController id="Qj5-ib-CJe" sceneMemberID="viewController">
+                <viewController id="Qj5-ib-CJe" customClass="MessangerViewController" customModule="JoshChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="huq-gE-X2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="3300.0000000000005" y="110.49107142857143"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="4Xt-KV-9Pp">
             <objects>
-                <viewController id="Aeu-IP-XHG" sceneMemberID="viewController">
+                <viewController id="Aeu-IP-XHG" customClass="LoginViewController" customModule="JoshChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1gg-H9-sRQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="2128" y="598"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="VRq-2D-Sfl">
             <objects>
-                <viewController id="CP2-SA-LrT" sceneMemberID="viewController">
+                <viewController id="CP2-SA-LrT" customClass="RegisterViewController" customModule="JoshChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HfQ-J3-Erd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

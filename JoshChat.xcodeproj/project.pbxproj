@@ -13,6 +13,11 @@
 		0396435B28E8476900D2B514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0396435928E8476900D2B514 /* Main.storyboard */; };
 		0396435D28E8476B00D2B514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396435C28E8476B00D2B514 /* Assets.xcassets */; };
 		0396436028E8476B00D2B514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0396435E28E8476B00D2B514 /* LaunchScreen.storyboard */; };
+		03DDE05B28EAA93900F3361D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03DDE05A28EAA93900F3361D /* GoogleService-Info.plist */; };
+		03DDE06328EAAA7E00F3361D /* MessangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE06228EAAA7E00F3361D /* MessangerViewController.swift */; };
+		03DDE07128EAAC1700F3361D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07028EAAC1700F3361D /* RegisterViewController.swift */; };
+		03DDE07328EAAC9D00F3361D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07228EAAC9D00F3361D /* LoginViewController.swift */; };
+		042BF42B1F421C20AA3F73B0 /* Pods_JoshChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928C1013A697D7CCB3A0E5F5 /* Pods_JoshChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		0396435C28E8476B00D2B514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0396435F28E8476B00D2B514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0396436128E8476B00D2B514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DDE05A28EAA93900F3361D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03DDE06228EAAA7E00F3361D /* MessangerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessangerViewController.swift; sourceTree = "<group>"; };
+		03DDE07028EAAC1700F3361D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		03DDE07228EAAC9D00F3361D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		928C1013A697D7CCB3A0E5F5 /* Pods_JoshChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoshChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4BCC128CA52B1737D38623F /* Pods-JoshChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoshChat.release.xcconfig"; path = "Target Support Files/Pods-JoshChat/Pods-JoshChat.release.xcconfig"; sourceTree = "<group>"; };
+		D2464C6556D02AB21D774B25 /* Pods-JoshChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoshChat.debug.xcconfig"; path = "Target Support Files/Pods-JoshChat/Pods-JoshChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042BF42B1F421C20AA3F73B0 /* Pods_JoshChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				0396435228E8476900D2B514 /* JoshChat */,
 				0396435128E8476900D2B514 /* Products */,
+				7FD3E25E8FE982E59D230D62 /* Pods */,
+				A34B3E587E8303A1A5D8D6AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,180 @@
 		0396435228E8476900D2B514 /* JoshChat */ = {
 			isa = PBXGroup;
 			children = (
+				03DDE06128EAAA2500F3361D /* Other */,
+				03DDE06028EAAA1800F3361D /* Resourse */,
+				03DDE05F28EAAA0000F3361D /* IntialVC */,
+				03DDE05E28EAA9AF00F3361D /* MessangerVC */,
+				03DDE05D28EAA97B00F3361D /* LoginVC */,
+				03DDE05C28EAA96C00F3361D /* RegistrationVC */,
 				0396435328E8476900D2B514 /* AppDelegate.swift */,
 				0396435528E8476900D2B514 /* SceneDelegate.swift */,
-				0396435728E8476900D2B514 /* ViewController.swift */,
+				03DDE05A28EAA93900F3361D /* GoogleService-Info.plist */,
 				0396435928E8476900D2B514 /* Main.storyboard */,
 				0396435C28E8476B00D2B514 /* Assets.xcassets */,
 				0396435E28E8476B00D2B514 /* LaunchScreen.storyboard */,
 				0396436128E8476B00D2B514 /* Info.plist */,
 			);
 			path = JoshChat;
+			sourceTree = "<group>";
+		};
+		03DDE05C28EAA96C00F3361D /* RegistrationVC */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE06F28EAAB8E00F3361D /* View */,
+				03DDE06E28EAAB8300F3361D /* ViewModel */,
+				03DDE06D28EAAB7900F3361D /* Model */,
+			);
+			path = RegistrationVC;
+			sourceTree = "<group>";
+		};
+		03DDE05D28EAA97B00F3361D /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE06C28EAAB3D00F3361D /* ViewModel */,
+				03DDE06B28EAAB3500F3361D /* View */,
+				03DDE06A28EAAB2E00F3361D /* Model */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		03DDE05E28EAA9AF00F3361D /* MessangerVC */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE06928EAAB1B00F3361D /* View */,
+				03DDE06828EAAB0F00F3361D /* ViewModel */,
+				03DDE06728EAAB0700F3361D /* Model */,
+			);
+			path = MessangerVC;
+			sourceTree = "<group>";
+		};
+		03DDE05F28EAAA0000F3361D /* IntialVC */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE06628EAAABF00F3361D /* View */,
+				03DDE06428EAAA9D00F3361D /* Model */,
+				03DDE06528EAAAA800F3361D /* ViewModel */,
+			);
+			path = IntialVC;
+			sourceTree = "<group>";
+		};
+		03DDE06028EAAA1800F3361D /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		03DDE06128EAAA2500F3361D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		03DDE06428EAAA9D00F3361D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03DDE06528EAAAA800F3361D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03DDE06628EAAABF00F3361D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0396435728E8476900D2B514 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03DDE06728EAAB0700F3361D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03DDE06828EAAB0F00F3361D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03DDE06928EAAB1B00F3361D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE06228EAAA7E00F3361D /* MessangerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03DDE06A28EAAB2E00F3361D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03DDE06B28EAAB3500F3361D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE07228EAAC9D00F3361D /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03DDE06C28EAAB3D00F3361D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03DDE06D28EAAB7900F3361D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03DDE06E28EAAB8300F3361D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03DDE06F28EAAB8E00F3361D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03DDE07028EAAC1700F3361D /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FD3E25E8FE982E59D230D62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2464C6556D02AB21D774B25 /* Pods-JoshChat.debug.xcconfig */,
+				C4BCC128CA52B1737D38623F /* Pods-JoshChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A34B3E587E8303A1A5D8D6AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				928C1013A697D7CCB3A0E5F5 /* Pods_JoshChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0396436428E8476B00D2B514 /* Build configuration list for PBXNativeTarget "JoshChat" */;
 			buildPhases = (
+				0DAC7112520172B174503972 /* [CP] Check Pods Manifest.lock */,
 				0396434C28E8476900D2B514 /* Sources */,
 				0396434D28E8476900D2B514 /* Frameworks */,
 				0396434E28E8476900D2B514 /* Resources */,
+				69775A54BD3EF65B286DA9F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0396436028E8476B00D2B514 /* LaunchScreen.storyboard in Resources */,
+				03DDE05B28EAA93900F3361D /* GoogleService-Info.plist in Resources */,
 				0396435D28E8476B00D2B514 /* Assets.xcassets in Resources */,
 				0396435B28E8476900D2B514 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +316,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DAC7112520172B174503972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoshChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69775A54BD3EF65B286DA9F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoshChat/Pods-JoshChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JoshChat/Pods-JoshChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JoshChat/Pods-JoshChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0396434C28E8476900D2B514 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DDE07328EAAC9D00F3361D /* LoginViewController.swift in Sources */,
+				03DDE06328EAAA7E00F3361D /* MessangerViewController.swift in Sources */,
+				03DDE07128EAAC1700F3361D /* RegisterViewController.swift in Sources */,
 				0396435828E8476900D2B514 /* ViewController.swift in Sources */,
 				0396435428E8476900D2B514 /* AppDelegate.swift in Sources */,
 				0396435628E8476900D2B514 /* SceneDelegate.swift in Sources */,
@@ -282,6 +510,7 @@
 		};
 		0396436528E8476B00D2B514 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2464C6556D02AB21D774B25 /* Pods-JoshChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +538,7 @@
 		};
 		0396436628E8476B00D2B514 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4BCC128CA52B1737D38623F /* Pods-JoshChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
