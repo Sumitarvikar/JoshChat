@@ -13,6 +13,7 @@
 		0396435B28E8476900D2B514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0396435928E8476900D2B514 /* Main.storyboard */; };
 		0396435D28E8476B00D2B514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0396435C28E8476B00D2B514 /* Assets.xcassets */; };
 		0396436028E8476B00D2B514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0396435E28E8476B00D2B514 /* LaunchScreen.storyboard */; };
+		0397E9D828EC02D00074AC77 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397E9D728EC02D00074AC77 /* Message.swift */; };
 		03DDE05B28EAA93900F3361D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03DDE05A28EAA93900F3361D /* GoogleService-Info.plist */; };
 		03DDE06328EAAA7E00F3361D /* MessangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE06228EAAA7E00F3361D /* MessangerViewController.swift */; };
 		03DDE07128EAAC1700F3361D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDE07028EAAC1700F3361D /* RegisterViewController.swift */; };
@@ -32,6 +33,7 @@
 		0396435C28E8476B00D2B514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0396435F28E8476B00D2B514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0396436128E8476B00D2B514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0397E9D728EC02D00074AC77 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		03DDE05A28EAA93900F3361D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03DDE06228EAAA7E00F3361D /* MessangerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessangerViewController.swift; sourceTree = "<group>"; };
 		03DDE07028EAAC1700F3361D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		03DDE06728EAAB0700F3361D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0397E9D728EC02D00074AC77 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				03DDE07528EAAE1700F3361D /* Constansts.swift in Sources */,
 				03DDE07928EAC0D500F3361D /* MesssageTableViewCell.swift in Sources */,
 				03DDE07328EAAC9D00F3361D /* LoginViewController.swift in Sources */,
+				0397E9D828EC02D00074AC77 /* Message.swift in Sources */,
 				03DDE06328EAAA7E00F3361D /* MessangerViewController.swift in Sources */,
 				03DDE07128EAAC1700F3361D /* RegisterViewController.swift in Sources */,
 				0396435828E8476900D2B514 /* ViewController.swift in Sources */,

@@ -56,6 +56,12 @@
                                     <segue destination="CP2-SA-LrT" kind="show" id="ynT-0d-Wlm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6W-9N-UvI">
+                                <rect key="frame" x="20" y="10" width="374" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,7 +77,16 @@
                             <constraint firstItem="4Gm-ES-E4H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zp4-fW-zJZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="F51-5C-22J"/>
+                    <navigationItem key="navigationItem" id="F51-5C-22J">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="uLO-wY-2Sx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wVh-gM-6N3">
+                                <rect key="frame" x="90" y="206" width="84" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="About Us"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +133,7 @@
                                     <constraint firstAttribute="height" constant="88" id="ySy-xO-G3N"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h3M-vj-VzO">
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h3M-vj-VzO">
                                 <rect key="frame" x="0.0" y="88" width="414" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -192,12 +207,12 @@
                                             <constraint firstAttribute="height" constant="34" id="lbb-Q3-kmf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSN-Zf-duB">
                                         <rect key="frame" x="47" y="254" width="300" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="cQ7-Zl-AjQ"/>
@@ -266,7 +281,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="registationButtonClicked:" destination="CP2-SA-LrT" eventType="touchUpInside" id="v61-KC-NxV"/>
-                                    <segue destination="Qj5-ib-CJe" kind="show" identifier="RegisterToMessanger" id="20X-YQ-vNx"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jjf-5S-uTB">
@@ -282,7 +296,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B55-Vg-C2n">
                                 <rect key="frame" x="47" y="254" width="300" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GwF-FF-t4V"/>
@@ -310,6 +324,7 @@
                         <outlet property="passwordTextField" destination="B55-Vg-C2n" id="dPP-AE-TVi"/>
                         <outlet property="registerButton" destination="YbB-Qe-NEP" id="kX8-cS-0vW"/>
                         <outlet property="usernameTextField" destination="jjf-5S-uTB" id="RKQ-zc-PjO"/>
+                        <segue destination="Qj5-ib-CJe" kind="show" identifier="RegisterToMessanger" id="EjN-I2-azw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8n1-PS-LQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
